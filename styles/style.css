@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Krona+One&family=Montserrat:wght@400;600&family=Pacifico&family=Sedgwick+Ave+Display&display=swap');
+
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #ff0000;
+
+    --fonte-primaria: 'Sedgwick Ave Display', cursive;
+    --fonte-secundaria: 'Sedgwick Ave Display', cursive;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    padding: 0% 0% 0% 0%;
+}
+
+.cabecalho__menu{
+    background-color: var(--cor-terciaria);
+    display: flex;
+    gap: 5%;
+    
+}
+
+
+.cabecalho__menu__link{
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: var(--cor-terciaria);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: start;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: var(--cor-primaria);
+    background-image: url(/assets/bg.jpg);
+    background-repeat: no-repeat;
+    color: var(--cor-secundaria);
+ 
+}
+
+
+.apresentacao{
+    padding: 50% 5% 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    flex-direction: column;
+}
+
+.apresentacao__conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+   
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+    
+}
+
+
+.titulo-destaque {
+    color: rgb(255, 0, 0);
+    font-size: 4.3rem;
+}
+
+.apresentacao__conteudo__paragrafo {
+    background-image: url(/assets/pf2.jpg);
+   font-size: 2rem;
+   font-family: var(--fonte-secundaria);
+   color: rgb(255, 255, 255);
+   text-align: center;
+   text-shadow: 2px 2px #000000;
+   
+}
+
+
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10PX;
+
+
+}
+
+.apresentacao__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5rem;
+    color:rgb(255, 247, 0);
+    
+}
+
+.apresentacao__links__navegacao {
+    /* background-color:  rgb(4, 67, 30);  */
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    border: 10px double var(--cor-terciaria);
+    width: 75%;
+    font-weight: 800;
+    text-align:center;
+    border-radius: 40px;
+    font-size: 2rem;
+    padding: 7.5px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__navegacao :hover { 
+    background-color: rgb(105, 102, 102);
+    font-size: 2rem;
+}
+
+
+.titulo-destaque:hover {
+
+    color: rgb(207, 253, 0);
+}
+
+.apresentacao__imagem {
+    width: 70%;
+    text-align: center;
+}
+
+
+
+
+.rodape {
+    
+    padding: 5% 10% 5% 10%;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+@media (max-width: 1200px ) {
+    .apresentacao {
+        flex-direction: column;
+    }
+
+    .cabecalho {
+        padding: 5% 0
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }   
+    .apresentacao {
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
